@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],[function(o,n,s){"use strict";const c=Math.random();n.a=c},function(o,n,s){"use strict";s.r(n);var c=s(0);console.log(c.a)},function(o,n,s){"use strict";s.r(n);var c=s(0);console.log(c.a)}]]);
