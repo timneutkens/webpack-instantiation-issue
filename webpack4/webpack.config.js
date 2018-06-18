@@ -4,6 +4,7 @@ module.exports = {
     'pages/page2': './pages/page2',
   },
   optimization: {
+    minimizer: [],
     splitChunks: {
       minSize: 0,
       chunks: 'all',
