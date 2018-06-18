@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "serve": "^9.0.0",
+    "webpack": "^4.12.0",
+    "webpack-command": "^0.2.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "serve ."
+  }
+}
