@@ -1,7 +1,7 @@
 module.exports = {
   entry: {
-    'page1': './src/page1',
-    'page2': './src/page2',
+    'pages/page1': './pages/page1',
+    'pages/page2': './pages/page2',
   },
   optimization: {
     splitChunks: {
