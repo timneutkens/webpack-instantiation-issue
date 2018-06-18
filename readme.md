@@ -40,3 +40,15 @@ I started by tracking down why the module got loaded multiple times and came to 
 My main question being: is this expected? Should we bind the "singleton" instance to `window` so that it will be the same across multiple module instances, or is this a regression/bug?
 
 I can imagine that there are more applications having multiple entrypoints on one page that are using the same module in both bundles, for example React components etc. Which could lead to unexpected results.
+
+I've made two reproductions, one using webpack 3 and one using webpack 4.
+
+The steps to run them are the same:
+
+- `cd` to the specific directory, for example: `cd webpack3`
+- `yarn build && yarn start`
+- open `http://localhost:5000`
+
+They both implement the exact same code and similar `webpack.config.js`.
+
+The shared module will export a `Math.random()` call, so that when the module gets instantiated again the number will differ. When opening with webpack 3 you will see the same number 2 times. With webpack 4 you'll see 2 different numbers
